@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".views.AddFoodItemActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:id="@+id/animation_view_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:lottie_rawRes="@raw/loading"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/main_view_container_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <AutoCompleteTextView
+            android:id="@+id/foodItemList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:hint="Choose item" />
+
+        <EditText
+            android:id="@+id/addFoodItemQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:inputType="number"
+            android:hint="Enter quantity" />
+
+        <Button
+            android:id="@+id/submitItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Item" />
+
+    </LinearLayout>
+
+</RelativeLayout>

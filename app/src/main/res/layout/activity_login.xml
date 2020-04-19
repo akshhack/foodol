@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/loginEnterEmail"
+        android:hint="Enter email"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/loginEnterPassword"
+        android:layout_below="@id/loginEnterEmail"
+        android:hint="Enter password"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_below="@id/loginEnterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="login"/>
+
+    <TextView
+        android:id="@+id/redirectFromLoginToSignup"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Sign up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
